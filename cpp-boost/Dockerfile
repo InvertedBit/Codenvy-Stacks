@@ -11,7 +11,9 @@ RUN sudo apt-get update && \
     sudo apt-get install g++ gcc cmake libboost-all-dev make gdb gdbserver -y && \
     sudo apt-get clean && \
     sudo apt-get -y autoremove && \
-    sudo rm -rf /var/lib/apt/lists/*
+    sudo rm -rf /var/lib/apt/lists/* && \
+    git config --global user.name "Alex Scherer" && \
+    git config --global user.email alex.scherer@outlook.com
 
 WORKDIR /projects
 
